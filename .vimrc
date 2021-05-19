@@ -50,3 +50,11 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+if has("autocmd")
+  au BufReadPost * if line("'\"")> 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+set ignorecase
+
+hi DiffText   cterm=none ctermfg=Black ctermbg=Red gui=none guifg=Black guibg=Red
+hi DiffChange cterm=none ctermfg=Black ctermbg=LightMagenta gui=none guifg=Black guibg=LightMagenta

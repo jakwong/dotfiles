@@ -1,6 +1,6 @@
 [user]
   name = Jason Kwong
-  email = jakwong@gmai.com 
+  email = jakwong@gmail.com 
 [core]
   editor = vi
   excludesfile = ~/.gitignore
